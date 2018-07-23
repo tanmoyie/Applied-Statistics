@@ -21,3 +21,9 @@ dataframe_2nd_sheet = pandas.read_excel(open('3D76FB00.xlsx','rb'),
     
 # convert the dataframe into an array/matrix
 input_data = dataframe1.values
+
+dataframe_csv = pandas.read_csv("Grading of the students in the exam (OR).csv")
+dataframe_csv.dtypes
+input_data = dataframe_csv.reset_index().values
+input_data_mat = dataframe_csv.astype()
+
