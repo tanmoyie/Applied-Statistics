@@ -17,11 +17,18 @@ x = dataframe_no_header[5].values # accessing 6th column
 y = dataframe_no_header[147-18].values # accessing 18th column from the last
 # draw a Scatter Plot 
 plt.scatter(x,y) 
-plt.show() 
+plt.show()
+ 
+# Modeling
 simple_linear_regression_model = OLS(y,x)
 simple_linear_regression_model_fit = simple_linear_regression_model.fit()
 # Estimating Model Coefficient
 print(simple_linear_regression_model_fit.params)
+
+
+
+
+
 
 # In[ ]: 
 x_multi = dataframe_no_header[[5,6,7,8]].values
